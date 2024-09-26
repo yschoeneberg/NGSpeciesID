@@ -5,6 +5,10 @@ NGSpeciesID is a tool for clustering and consensus forming of long-read amplicon
 
 NGSpeciesID is distributed as a python package supported on Linux / OSX with python v3.6. [![Build Status](https://travis-ci.org/ksahlin/NGSpeciesID.svg?branch=master)](https://travis-ci.org/ksahlin/NGSpeciesID).
 
+Fork Edits
+==========
+This fork is supposed to rule out some bugs related to consensus calling and Medaka. In short, it removes spoa and medaka (which would throw and error) from the pipeline, but lets the pipeline output the reads_to_consensus*.fq files so that spoa and the newest version of Medaka can be run independently of this script. This enables the use of the newest basecalling models.
+
 Table of Contents
 =================
 
